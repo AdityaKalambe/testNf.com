@@ -1,0 +1,58 @@
+
+
+in that project framework performed a cross browser testing by using testng.xml suite on diffrent 
+Browser like chrome,Microsoft edge,Firefox browser
+
+                 "Short description about the folder structure in project framework"
+                 
+properties file(config.properties):-(com.qa.config.properties)
+This file (config.properties) stores the information 
+ as browser specific information, application URL,
+ 
+ BaseTest class:-(com.qa.testNf.BaseTest)
+ This class is responsible for configurations of properties files, 
+ Initializing the WebDriver and data provider
+ 
+ page class package:-(com.qa.pageElement)
+ All the web page related classes come under Pages package in that we are going 
+ to declare the WebElement locators
+ For example, Home Page and Login Page have a separate classes to store element locators
+ 
+ 
+ Test class Package:-(com.qa.testNF.Test)
+ all the tests related classes come under Tests package.to perform the validation
+ on test cases
+ 
+ 
+ Test Data Package:-(com.qa.testdata)
+ All the test data will be kept in excel sheet (inputcontroller.xlsx and outputcontroller.xlsx). By using ‘inputcontroller.xlsx’, we pass test data and handle data driven testing.
+ By using ‘outputcontroller.xlsx’ we store the data in excel, used Apache POI to handle excel sheets.
+ 
+ 
+ Utility package:-(com.qa.utility)
+ stores and handles the functions (The code which is repetitive in nature such as , capturing screenshots,Listeners,Reuseable method,)
+ This class extends the TestBase class to inherit the properties of TestBase in utility.
+ 
+ 
+ 
+ Action Driver Package:-(com.qa.Actiondriver)
+ actions driver package class contains code functions  like clicking on an element, verifying element or text,
+  mouse hover and right click , scrolling etc.
+  
+  
+
+Screen Shots Folder:-(Screenshot-testNF)
+Screenshot folder are stored the screenshots of failed test cases or as per the requirement test block,skip
+ ,completed etc
+
+pom.xml:-
+pom.xml are configure the project ,and manage the plugins and dependencies required for projects
+
+testng.xml:-
+testng.xml for test configuration we are going to do configuration as per the requirements
+
+
+
+
+
+  
