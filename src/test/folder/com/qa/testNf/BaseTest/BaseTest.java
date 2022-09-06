@@ -33,9 +33,9 @@ public class BaseTest {
 	 * 1.Launch the application: https://test-nf.com/english.html
 	 * URL is been Fetched from config.properties Files
 	 */
-	@Parameters("browser")
-	@BeforeTest
 	
+	@BeforeTest
+	@Parameters("browser")
 	public void BrowserSetup(String browser) throws IOException {
 		
 		//Chrome Driver initialize
