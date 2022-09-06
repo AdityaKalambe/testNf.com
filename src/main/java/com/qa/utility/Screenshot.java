@@ -10,9 +10,9 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshot {
 	
-	/*Screenshot code for capturing the screenshot
+	/*Screenshot code are implemented for capturing the screenshot
 	 * implemented with listeners
-	 * */
+	 */
 	public static void captureScreen(WebDriver driver, String name) throws IOException {
 		
 		        //step-1 casting TakesScreenshot interface with driver

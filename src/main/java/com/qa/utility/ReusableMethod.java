@@ -5,15 +5,16 @@ import java.io.IOException;
 import org.openqa.selenium.WebElement;
 
 import com.qa.testNf.BaseTest.BaseTest;
-import com.qa.testdata.*;
+import com.qa.testdata.OutPutExcel;
+
 
 public class ReusableMethod extends BaseTest  {
 
 	/*Reusable method 
 	 * this method is directly used in test class for validation
-	 * with the help of this method we can execute multiple testcases or 
-	 * scenario according to requirement
-	 * */
+	 * with the help of this method we can execute multiple test cases or 
+	  scenario according to requirement
+	*/
 	public static <WriteData> String containsMethod(WebElement Element,int c,int r,String val) throws IOException {
 		Element.click();
 

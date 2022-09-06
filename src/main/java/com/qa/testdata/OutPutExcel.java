@@ -13,7 +13,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+/*
+ * OutPutexcel class are used to store the data in excel sheet 
+ * This excel code is handled by using Apache POI jars
+ */
 public class OutPutExcel {
 
 		public static void WriteData(int r,int c,String val) throws IOException  {

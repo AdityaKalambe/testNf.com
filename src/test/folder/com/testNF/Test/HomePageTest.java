@@ -59,7 +59,9 @@ public class HomePageTest extends BaseTest {
 	  sa.assertEquals(BusketballTab.contains("busketball"), true);
 	  sa.assertEquals(KriketTab.contains("kriket"), true);
 	  sa.assertEquals(Cibersport.contains("cibersport"), true); 
+	  System.out.println("verifiaction done and all url stored in excel");
 	  sa.assertAll();
+	 
 	 
 	  }
 	  
@@ -69,10 +71,12 @@ public class HomePageTest extends BaseTest {
 		 */
 	@Test(priority = 3)
 	public void verifyURLHomeTab() throws IOException {
-
+    //This Test case is fail due to not contains tabName in URL
 		String HomeTab = ReusableMethod.containsMethod(hp.Home, 6, 0, driver.getCurrentUrl());
 		sa.assertEquals(HomeTab.contains("Home"), true);
+		System.out.println("This test case fail");
 		sa.assertAll();
+		
 	}
 
 }

@@ -8,10 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterSuite;
+
+
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -20,12 +20,11 @@ import com.qa.config.properties.prop;
 import com.qa.testdata.InputExcel;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-/*BaseTest class is designed for cross browser testing
- *configuration for cross browser testing is done in testng.xml
- *in base test class webdriver are initialized where we require 	
- * the webdriver just extend the BaseTest class
+/*BaseTest class is designed for initialization of WebDriver and  different Browsers instance
+ * Where We require browser then we simply extends the BaseTest class
  * Script is Written for Cross browser Testing
- *data provider are used to fetch the data from excel
+ * configuration for cross browser testing is done in testng.xml by using parameterization
+ * DataProvider used to fetch the data from the excel
  */
 public class BaseTest {
 
@@ -79,6 +78,8 @@ public class BaseTest {
 	public void tearDown() {
 		driver.close();
 	}
+	
+	//Data provider are used to fetch the data from excel class is present in (com.qa.testdata)
 	@DataProvider(name="testdata")
 	public String [][]hrm() throws IOException{
 	 String data[][]=InputExcel.getData();

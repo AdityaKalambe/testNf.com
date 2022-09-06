@@ -13,6 +13,7 @@ public class prop extends BaseTest  {
 	public Properties prop;
 	public FileInputStream fis;
 public  void fetchurl(String uri) throws IOException {
+	//To fetch the data from config.properties file
 	 prop=new Properties();
 	 String path=System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\config\\properties\\config.Properties";
 	 fis=new FileInputStream(path);

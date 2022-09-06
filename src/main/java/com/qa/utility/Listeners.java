@@ -15,7 +15,7 @@ public class Listeners extends BaseTest implements ITestListener {
 	 * Listeners are listening the test script
 	 * after failure of test case capture the screenshot and store in the folder
 	 * Screenshot code is implemented with listeners to capture SC
-	 * Screenshot-testNf is collection folder
+	 * Screenshot-testNf is screenshot collection folder
 	 * listeners are configured in testng.xml
 	 */
 	@Override

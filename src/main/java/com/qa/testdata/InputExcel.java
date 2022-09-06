@@ -1,6 +1,7 @@
 package com.qa.testdata;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -15,6 +16,11 @@ import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+/*
+ * InputEcel class are used to provide the data to test case at runtime
+  to validate test cases with multiple data
+ *This excel code is handled by using Apache POI jars
+ */
 
 public class InputExcel {
 	
